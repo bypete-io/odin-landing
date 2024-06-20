@@ -202,3 +202,21 @@ h2 {
 .attention button {
   flex-shrink: 0;
 }
+
+.underlined {
+  position: relative;
+}
+.underlined:after{
+  content: '';
+  background-image: url(/images/needle-underline.svg);
+  background-repeat:no-repeat;
+  background-size: 100% 120%;
+  position: absolute;
+  display: block;
+  bottom: -2px;
+  right: 0;
+  width: 100%;
+  height: 10px;
+  rotate: -1deg;
+  scale: 1.25;
+}
